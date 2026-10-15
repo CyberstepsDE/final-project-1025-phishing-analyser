@@ -1,0 +1,898 @@
+{
+  "project": "Cybersteps Phishing Email Analyzer",
+  "release": "12.2-team-final-synthetic-eml-validation-pack",
+  "package_format": "single-current-release",
+  "documentation": "README.md",
+  "markdown_files": 22,
+  "test_evidence": "docs/V12_2_SAMPLE_PACK_RELEASE.md",
+  "test_limitations": "v12.2 adds 48 entirely fictional MIME demonstration emails. The 20/24 phishing High-risk and 0/18 legitimate High-risk observations are synthetic regression behavior, NOT independent real-world accuracy evidence. A separate limited v12.1 public corpus exploratory study remains documented. QR image recognition is browser/decoder dependent; original public dataset and private case review are excluded.",
+  "runtime": "offline static browser JavaScript; optional local QR decoder and unverified local IOC list",
+  "source_sha256": [
+    {
+      "path": "README.md",
+      "bytes": 18449,
+      "sha256": "94ed156fffb71e622c78e68fa1319083401d7ce27e8896d8ded756cd894a4340"
+    },
+    {
+      "path": "_headers",
+      "bytes": 354,
+      "sha256": "228ec440502776460fe039ac20f16d5bce2669f8c096bcc28e0cfc5fa95957bf"
+    },
+    {
+      "path": "css/styles.css",
+      "bytes": 25099,
+      "sha256": "1f69edb60fc3553026babbf4bce0da718b20abc6edf95303552df9154ff22e4b"
+    },
+    {
+      "path": "docs/BASELINE_COMPARISON.csv",
+      "bytes": 926,
+      "sha256": "6ab3b3c2e175cd5b66de9914deba31a2610e27e7ce84559ebd1bb43970e20efd"
+    },
+    {
+      "path": "docs/MERGE_REVIEW_FIXES.md",
+      "bytes": 3429,
+      "sha256": "4db47d9379b27281cd36f37fc5005f79bd3a751af4ca09e0cff7023156bd2aca"
+    },
+    {
+      "path": "docs/TEAM_BASELINE_PROVENANCE.json",
+      "bytes": 4478,
+      "sha256": "2ae29fd1e6186617c2558de64c120d62460f9374d0afb728f3e9e88051613e9b"
+    },
+    {
+      "path": "docs/TEAM_V51_INTEGRATION.md",
+      "bytes": 5471,
+      "sha256": "92029cd46054c353db9257921cbb4b67afd5c41aa1a5bd5895bb27039ea17df3"
+    },
+    {
+      "path": "docs/TEAM_V51_VALIDATION.json",
+      "bytes": 1909,
+      "sha256": "b4f8ec34404f50247ee241a5e3f4788432b86cdc2f23a713adb5853911abed5c"
+    },
+    {
+      "path": "docs/V10_EXTERNAL_QUALITY_EVALUATION.md",
+      "bytes": 5285,
+      "sha256": "185e413ade9b4f02d859d73049dd4042329750edab0fb387a1c129c38f638ffa"
+    },
+    {
+      "path": "docs/V10_FILE_PROVENANCE.json",
+      "bytes": 26504,
+      "sha256": "770c1fce1fd0af419ada9be4a668f12faa69a746f6f241207ff0a9790d2344c3"
+    },
+    {
+      "path": "docs/V10_RELEASE_NOTES.md",
+      "bytes": 3296,
+      "sha256": "c6ff0478f24c971995e6acd44e6f50aa97e3b88d8c5b6634e6ed4d5daf3864d5"
+    },
+    {
+      "path": "docs/V11_BROWSER_PREVIEW.png",
+      "bytes": 335201,
+      "sha256": "0e570e665ad6738c9ec2603179b101168b5a21735b2c7c2967b209cddffa3272"
+    },
+    {
+      "path": "docs/V11_BROWSER_SMOKE.json",
+      "bytes": 402,
+      "sha256": "5954662b151bc2a073e86cba2765fb21c7d37c1ce7205e94bdc97954f46d0840"
+    },
+    {
+      "path": "docs/V11_DECISION_QUALITY_STUDY.md",
+      "bytes": 7558,
+      "sha256": "925f098663ccd14385707c291d5c6371b0883de8c30407ac3dcb7a4acc480820"
+    },
+    {
+      "path": "docs/V11_PROVENANCE.json",
+      "bytes": 4938,
+      "sha256": "422c44f32c625223c37a57723b3ab7c0a1b5d5756eeb185566c7a0e27020c396"
+    },
+    {
+      "path": "docs/V11_RELEASE_NOTES.md",
+      "bytes": 1849,
+      "sha256": "83a73788fcb06a6e3475b074b385bb08ca89b973aa25ee5b3e882322e5fd77f3"
+    },
+    {
+      "path": "docs/V11_VALIDATION.json",
+      "bytes": 3063,
+      "sha256": "ea3dfa5b88da70c93443ebdb7aa2db02afc673d403c394f019ba6d17cf0d6e84"
+    },
+    {
+      "path": "docs/V12_1_EXTERNAL_CORPUS_AUDIT.json",
+      "bytes": 3047,
+      "sha256": "e1d380703ddc591c37a4310df8874490de77dae27598f0e1c671b91be4d6ac82"
+    },
+    {
+      "path": "docs/V12_1_EXTERNAL_CORPUS_AUDIT.md",
+      "bytes": 7643,
+      "sha256": "386704d23393a484124aac4dde03e88a58a4bbe25828a381cfe9d8a73960f259"
+    },
+    {
+      "path": "docs/V12_1_RELEASE_NOTES.md",
+      "bytes": 850,
+      "sha256": "94424ace00744027f4488fc7476e09d0c9145f7dab0001aadc000830508ee9d5"
+    },
+    {
+      "path": "docs/V12_2_EML_SYNTHETIC_VALIDATION.json",
+      "bytes": 30261,
+      "sha256": "7013dcc2ac9fae1ffd8a9c0dfce2a29b8730f5000691433c94c8eb44255a42b8"
+    },
+    {
+      "path": "docs/V12_2_SAMPLE_PACK_RELEASE.md",
+      "bytes": 3286,
+      "sha256": "74ff6b0c3cef2c8cc14eee81b8ab167c28c8195c0d61c3ef510a5c06319fd77a"
+    },
+    {
+      "path": "docs/V12_FILE_PROVENANCE.json",
+      "bytes": 31840,
+      "sha256": "94d19c286f002fdec750556a7a7cf9e5c9e89a94be0acb8b542a3d107f12813d"
+    },
+    {
+      "path": "docs/V12_INDEPENDENT_EVIDENCE_PROTOCOL.md",
+      "bytes": 9950,
+      "sha256": "d8261d4229344c9a48395ac892a1d69e3df7a2717384261e3af8d29caefa7778"
+    },
+    {
+      "path": "docs/V12_RELEASE_NOTES.md",
+      "bytes": 1446,
+      "sha256": "7b7354037574e3da6ce581ca02d531b1831c3b260e66340ca3b6289952a6c589"
+    },
+    {
+      "path": "docs/V12_VALIDATION_SUMMARY.json",
+      "bytes": 3187,
+      "sha256": "36899c17606909e140e6344c2543b0de12aa33e8118e5014e6d9b4b6176a47d0"
+    },
+    {
+      "path": "docs/V5_1_EXTENSION_REFERENCE.md",
+      "bytes": 29773,
+      "sha256": "543327a70e9ee2017ae90ab882a087af59825301b19667be144d42ddbb9da9cb"
+    },
+    {
+      "path": "docs/V6_FILE_PROVENANCE.json",
+      "bytes": 4223,
+      "sha256": "350fa5f81b0748040ca639397fd5c4f877664ea92d01493ad45b320ddd677fe1"
+    },
+    {
+      "path": "docs/V6_RELEASE_NOTES.md",
+      "bytes": 4269,
+      "sha256": "efb37c658f3592fa8eff2cace7afc07dffd26ec3db0ab51fb2609ed603693ec4"
+    },
+    {
+      "path": "docs/V6_THREAT_MODEL_EVALUATION.md",
+      "bytes": 6255,
+      "sha256": "b10c051d1344e393a00938c46c66ec471e8bc5cad8071e0ab815080c8e531657"
+    },
+    {
+      "path": "docs/V7_EVALUATION_SECURITY.md",
+      "bytes": 7234,
+      "sha256": "731d1f9bafa2a4aacbade4c298622227060bf8c7825c0a50460e541c42ad0ede"
+    },
+    {
+      "path": "docs/V7_FILE_PROVENANCE.json",
+      "bytes": 5516,
+      "sha256": "3eaf6b03aa6fd34e422f82222b6fe6756f87fc24e92d950f690535a333b37f75"
+    },
+    {
+      "path": "docs/V7_RELEASE_NOTES.md",
+      "bytes": 4338,
+      "sha256": "416d3ee0777a869e3317d28b8723f45859cd8f1a738e878047cfed1f935933bf"
+    },
+    {
+      "path": "docs/V8_ATTACHMENT_FORENSICS_SECURITY.md",
+      "bytes": 6471,
+      "sha256": "be2824ddcb5d7398d13d81f5fcaca16f86bef6355ee947be803160929c23d8a0"
+    },
+    {
+      "path": "docs/V8_FILE_PROVENANCE.json",
+      "bytes": 5382,
+      "sha256": "6001e21a6883673ee9f7d2ba48168e268f54640b47fce86feea43efed8790289"
+    },
+    {
+      "path": "docs/V8_RELEASE_NOTES.md",
+      "bytes": 2787,
+      "sha256": "09144fc361fa995dea87016d37deee0d26b37d006246a721d1c66c039bf08896"
+    },
+    {
+      "path": "docs/V9_BROWSER_PREVIEW.png",
+      "bytes": 359045,
+      "sha256": "b3ca75bddd0ddd3b52712c3c06c70b7d798ff920097dca99f9e0a9714b87288c"
+    },
+    {
+      "path": "docs/V9_BROWSER_SMOKE.json",
+      "bytes": 330,
+      "sha256": "dfd1ae2ab800f96e991e72fd004203d62b1cb4ec28a22799e9d394d0d0eb5712"
+    },
+    {
+      "path": "docs/V9_DETECTION_QUALITY_STUDY.md",
+      "bytes": 8732,
+      "sha256": "d82e4245baa782d76d4a1c1e5cd210b29552c580b5b7de3f7eef1463918dbeb0"
+    },
+    {
+      "path": "docs/V9_FILE_PROVENANCE.json",
+      "bytes": 2474,
+      "sha256": "578d5abda407d8ccfefe9c2b742b86a2969597244cf8cf5ad7c9af2793430225"
+    },
+    {
+      "path": "docs/V9_QUALITY_DEVELOPMENT_COMPARISON.json",
+      "bytes": 10349,
+      "sha256": "ac780e29b5c207194e268f1ca5446361bbdf5b8e57cde2b9244f7d3951c9cd4e"
+    },
+    {
+      "path": "docs/V9_V8_BASELINE_CASE_SCORES.json",
+      "bytes": 3655,
+      "sha256": "8e427cb98a151003c108d464374a04b08c61b6570c1a653c0c0e294d565bdb6f"
+    },
+    {
+      "path": "docs/browser-preview.png",
+      "bytes": 552652,
+      "sha256": "8471fa008f50e45205531b1bc13de5843b423555d553c308ee368cc5f9fa0970"
+    },
+    {
+      "path": "docs/browser-verification.json",
+      "bytes": 401,
+      "sha256": "160e34e1a4adb6566e0698c13d613ea49198d1eb5a9b635ed03b72cd2e463a9b"
+    },
+    {
+      "path": "docs/merge-review-verification.json",
+      "bytes": 1774,
+      "sha256": "1e0350be6185129bf23372c14fb2d5ad144c7cad216d9378dd5b4948ad42b215"
+    },
+    {
+      "path": "docs/synthetic-benchmark-result.json",
+      "bytes": 1732,
+      "sha256": "94d65c8a0abc0ba1d4f1fc00bb550562f8857462b638d83ad8d62cabded95d5e"
+    },
+    {
+      "path": "docs/test-results.json",
+      "bytes": 2619,
+      "sha256": "22d7d9ece8770f2e0506b4a76dc768e6bdba0759dbd4ea9efc459a41d095cc6a"
+    },
+    {
+      "path": "docs/v6-browser-verification.json",
+      "bytes": 500,
+      "sha256": "98e495340cbb1d79f92027452fb11ece702b5ac2928badf39cc83a8eaacdac15"
+    },
+    {
+      "path": "docs/v6-oauth-preview.png",
+      "bytes": 387409,
+      "sha256": "f9bc7766a0f406e9e2cf2c7fd03db6c0164579705a628ce6aeabea04772f6c05"
+    },
+    {
+      "path": "docs/v6-synthetic-audit.json",
+      "bytes": 5706,
+      "sha256": "aca08c3377dc45a72aa35efff6cb0934f1c8b5825737511cddd3e33c5a92d868"
+    },
+    {
+      "path": "docs/v6-synthetic-comparison.json",
+      "bytes": 1335,
+      "sha256": "590e808840239d3ce143dab33274635726ede36ffea1ed0a2a5d8f5019947105"
+    },
+    {
+      "path": "docs/v7-browser-verification.json",
+      "bytes": 403,
+      "sha256": "58bb910cda9fd7d87a98974f9da40f277c3074b761e737caf8eab3c33ccd51c8"
+    },
+    {
+      "path": "docs/v7-suite-verification.json",
+      "bytes": 2481,
+      "sha256": "a5930422ea45763508acc519ed2a1eb692e0b6b7eaffd9edbee5e818b64d8729"
+    },
+    {
+      "path": "docs/v7-synthetic-split-smoke.json",
+      "bytes": 3122,
+      "sha256": "f253fee576922eb313988354a1ff34d9940ad54cc4b38e25ce4a275cc5c6daea"
+    },
+    {
+      "path": "docs/v8-browser-preview.png",
+      "bytes": 396904,
+      "sha256": "e29c6edfc4ad8780ad04f5196de12ad2d537b5cfd10bcf436a6a738c25d34751"
+    },
+    {
+      "path": "docs/v8-browser-verification.json",
+      "bytes": 437,
+      "sha256": "e58157ad6d57d611ad5c6a730a095c9973c27e027609611b79e79dc1b21b6c25"
+    },
+    {
+      "path": "docs/v8-suite-verification.json",
+      "bytes": 3409,
+      "sha256": "edec6a8a11493e831da96ef05c24c63daf91a83e670496ebdd4f3c6ea3ae578a"
+    },
+    {
+      "path": "examples/eml/01_phishing/P01_credential-harvest-sender-spoof-and-spf-failure.eml",
+      "bytes": 628,
+      "sha256": "a85b9a41f62d665d34bd874bb7f2661626db2b5dcf55614d2da06478d5437a42"
+    },
+    {
+      "path": "examples/eml/01_phishing/P02_executive-impersonation-and-payment-redirect.eml",
+      "bytes": 486,
+      "sha256": "69a23a396589f0b790fcd0e170f0e5ac9594e76bea4176cc1d39aaf103d908cd"
+    },
+    {
+      "path": "examples/eml/01_phishing/P03_german-bank-credential-and-tan-request.eml",
+      "bytes": 529,
+      "sha256": "f8485657058dafb8dd63f7f7066dc7d9785a805e3b5497aa03d0779c5b34d7be"
+    },
+    {
+      "path": "examples/eml/01_phishing/P04_french-parcel-re-delivery-fee-request.eml",
+      "bytes": 493,
+      "sha256": "bcdfb1fc1414a59897fb06a86b25d3b2b39306fd4c9e2549fcf57aa0257be2dd"
+    },
+    {
+      "path": "examples/eml/01_phishing/P05_spanish-bank-verification-and-credential-request.eml",
+      "bytes": 467,
+      "sha256": "4ee1e49c8c7556027934c6141b4d19e8503f1ff12751135eb5f622059fcff6c6"
+    },
+    {
+      "path": "examples/eml/01_phishing/P06_shortened-phishing-destination-with-urgency.eml",
+      "bytes": 466,
+      "sha256": "ceee9f7a425136eb80ad4f4bd6888cfde79aeed87e9c896933c1e0f29c7f29ed"
+    },
+    {
+      "path": "examples/eml/01_phishing/P07_cyrillic-character-visually-impersonating-paypal.eml",
+      "bytes": 446,
+      "sha256": "9cfea4075bfa5a474e5ddbad4346d61d2253fd8e2126129123f5eaf3295c4e5b"
+    },
+    {
+      "path": "examples/eml/01_phishing/P08_rn-to-m-typosquatting-for-microsoft.eml",
+      "bytes": 425,
+      "sha256": "dc5b29825252731f7e45607c321fa7224132cebc667c8147e42d839b14ece5d4"
+    },
+    {
+      "path": "examples/eml/01_phishing/P09_zero-width-obfuscation-in-credentials-request.eml",
+      "bytes": 459,
+      "sha256": "d051a666f8731a44f351fdd9dd9c2222f10ff9520fd514b44786ddf93b7147c2"
+    },
+    {
+      "path": "examples/eml/01_phishing/P10_html-visible-link-differs-from-destination.eml",
+      "bytes": 777,
+      "sha256": "63c669575beb97d76c10d55706b5cc7ff37af1284f32dc8f2b2caccb5f97bfb9"
+    },
+    {
+      "path": "examples/eml/01_phishing/P11_multipart-alternative-hides-link-in-html.eml",
+      "bytes": 737,
+      "sha256": "ea1b2d1f2b0c79d8ede833285edde7a04a55ce4290ce7161d07e5343d5ae5e8d"
+    },
+    {
+      "path": "examples/eml/01_phishing/P12_base64-encoded-plain-phishing-body.eml",
+      "bytes": 504,
+      "sha256": "6ae9caa25fd7a2ca5489cfcd65c8c73b40b213206fc3425b99d595233c17ae19"
+    },
+    {
+      "path": "examples/eml/01_phishing/P13_quoted-printable-german-phishing-text.eml",
+      "bytes": 514,
+      "sha256": "dfeefed4b5af8ae15c4a1f4c36013d60cbdbeb11575e23af0dc999000d2b3f16"
+    },
+    {
+      "path": "examples/eml/01_phishing/P14_sender-and-reply-to-diverge-invoice-change.eml",
+      "bytes": 487,
+      "sha256": "c53494ea45c31a6526dbee60e5b098f79b301f95659df9fd5f91d8d11920b172"
+    },
+    {
+      "path": "examples/eml/01_phishing/P15_disguised-executable-attachment-and-macros.eml",
+      "bytes": 787,
+      "sha256": "7cb5e51b6b1b2418f69722738d943ec8c173d045add2e7fc7f3ac243262a9eda"
+    },
+    {
+      "path": "examples/eml/01_phishing/P16_oauth-device-authorization-code-instruction.eml",
+      "bytes": 484,
+      "sha256": "d0b51a2a177decdad7f5851786f824f24e0059c50ba63bfc9ebcc1a2b78f136f"
+    },
+    {
+      "path": "examples/eml/01_phishing/P17_unexpected-mfa-push-approval-request.eml",
+      "bytes": 456,
+      "sha256": "d660b3e05099db674ef602a1c4005b14c33d70feb43439bab9208e37d75f1f2f"
+    },
+    {
+      "path": "examples/eml/01_phishing/P18_image-attachment-conceals-a-qr-destination.eml",
+      "bytes": 1547,
+      "sha256": "940af0b8586ecb20b02e33abcf65259a20884b8ee5304606a00aa8965c9fa2ef"
+    },
+    {
+      "path": "examples/eml/01_phishing/P19_pdf-hyperlink-to-simulated-credential-collection.eml",
+      "bytes": 3047,
+      "sha256": "86e5fb5025b6a7a44d2e3b316cf59c86d8959dfc49c031f2af53b976d7f807ea"
+    },
+    {
+      "path": "examples/eml/01_phishing/P20_docx-external-hyperlink-to-fake-login.eml",
+      "bytes": 2161,
+      "sha256": "82762c900b08660a3f04f7682fee0388d12c00e89be7613c3a84878633af665a"
+    },
+    {
+      "path": "examples/eml/01_phishing/P21_multi-layer-url-encoding-and-redirect-parameter.eml",
+      "bytes": 497,
+      "sha256": "1c6a8c2cfbe5101c819d5c6f48cbc516cf5916d88d96557097c2f94bdd4f26c6"
+    },
+    {
+      "path": "examples/eml/01_phishing/P22_remote-access-installation-request.eml",
+      "bytes": 485,
+      "sha256": "d695ed67985e968f0cc54587b450c4e4737c9974cba2d49308f87d799f41e225"
+    },
+    {
+      "path": "examples/eml/01_phishing/P23_german-changed-iban-business-email-compromise.eml",
+      "bytes": 510,
+      "sha256": "ce6adf12fdbd67eb21bb684fb5af03828a509ec8750aec5f123fcce904206823"
+    },
+    {
+      "path": "examples/eml/01_phishing/P24_html-login-form-posting-credentials-to-third-party.eml",
+      "bytes": 797,
+      "sha256": "f7c3328863972d8aeb0b61b63666deb5df6b6b0b3aeca72c3a9d5cff438e2535"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L01_routine-team-planning-invitation.eml",
+      "bytes": 424,
+      "sha256": "3c671acb2cda4ff9adabc1967dea53ca3f589e9ed8342a10268e31b3d7eae858"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L02_plain-supplier-invoice-with-no-action-pressure.eml",
+      "bytes": 496,
+      "sha256": "03b4bd803bbb794b13a534f8fa81210de2fac44d4a479855d642cca838a8cc18"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L03_german-notice-says-never-share-pin.eml",
+      "bytes": 461,
+      "sha256": "78039980fc2b0b3ba2b618170a2842762fce809b4c6d6d057f45a597502446fe"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L04_english-advice-forbids-sharing-verification-codes.eml",
+      "bytes": 473,
+      "sha256": "8565f0eb90c47f80ebb66d5108656e1c3a1ed7694ae72671363cfac2a0382fe1"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L05_normal-microsoft-authentication-url-in-guidance.eml",
+      "bytes": 455,
+      "sha256": "eba02ba04d909aaaf755f3b36d4c4888a90788b2c6fc902732b794ae67b3a161"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L06_shipping-status-notification-without-action.eml",
+      "bytes": 403,
+      "sha256": "5a7b987b0b09c89297158f42b2c3cbb5667c7c92eacaaea97e70808db4fa8198"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L07_receipt-from-courier.eml",
+      "bytes": 426,
+      "sha256": "44c443fac0e386b951d5a8b60f16ccb88df68ee1a1880c9bb00a5fda8e8e8a3d"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L08_payroll-calendar-notice.eml",
+      "bytes": 424,
+      "sha256": "b3bd4baa6fc57e1413552989589d9f73f13897261065a3b7dd095411b8e4968d"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L09_quoted-training-example-with-suspicious-words.eml",
+      "bytes": 463,
+      "sha256": "fc9e569a3c9346be5e3f48861b84e57e019bb7ffe013a84cf2d72b951a768160"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L10_german-bank-security-warning.eml",
+      "bytes": 496,
+      "sha256": "c7b5a6124929de9657467058804d6688aa3624597a8748be149dc354087a787c"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L11_passive-subscription-renewal-reminder.eml",
+      "bytes": 436,
+      "sha256": "3e18702ca11d64069f9eb0cf8ea04d32c5b37e7feac452f5b155b9b5e4bf6334"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L12_french-newsletter-in-quoted-printable.eml",
+      "bytes": 444,
+      "sha256": "bb5415df446af0679b1df1e50475f5581fa374f89ebc213a686e680d17494d23"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L13_spanish-receipt-with-base64-body.eml",
+      "bytes": 437,
+      "sha256": "ca4a5eb3aa649fa2347d3abdb0156d6a8725a45d3fe7743c2bd414ba2f87e321"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L14_multipart-plain-and-html-agree-on-official-action.eml",
+      "bytes": 744,
+      "sha256": "92890bd1308ad518c67f3aadcc285c6fc463f44d8d0c24f2ec4743d3d7c73c94"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L15_qr-image-for-event-room-information.eml",
+      "bytes": 1433,
+      "sha256": "934789d30e635ab061d1775f63d61a80074cd7a16823dbe099608415c822adbb"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L16_benign-pdf-agenda-attachment.eml",
+      "bytes": 2990,
+      "sha256": "eaaf43a1cd51778a7c730a1eb9214f3c713914a9798cfd3401f4fa666efea149"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L17_benign-docx-handbook-attachment.eml",
+      "bytes": 2115,
+      "sha256": "16a905d7c18fd08a88e9004885eee6a64a52af4ca4a6d9155b0f30c68a6deb77"
+    },
+    {
+      "path": "examples/eml/02_legitimate/L18_it-mfa-training-without-approval-instruction.eml",
+      "bytes": 459,
+      "sha256": "1bbf14dde67c12097ae25cf72d96f692bf0d9ee75d08c2ec076137610d7bf97d"
+    },
+    {
+      "path": "examples/eml/03_manual_review/R01_billing-failed-notice-with-no-independent-sender-verification.eml",
+      "bytes": 444,
+      "sha256": "f44166fdc8ebda8eab21404ac3ad0b745049610e5ea3c7bc0e884371165554e4"
+    },
+    {
+      "path": "examples/eml/03_manual_review/R02_account-recovery-instruction-lacking-a-supplied-url.eml",
+      "bytes": 425,
+      "sha256": "249735105ce33a2e4f72764cb9017abc94d0220e18cb49799a9db5892dd52a1f"
+    },
+    {
+      "path": "examples/eml/03_manual_review/R03_unverified-bank-message-invitation.eml",
+      "bytes": 437,
+      "sha256": "a29054ca52961dd10dae2f7094ec10c04078458785bb5aba10f6f52d6fef1214"
+    },
+    {
+      "path": "examples/eml/03_manual_review/R04_parcel-address-confirmation-without-a-link.eml",
+      "bytes": 446,
+      "sha256": "e09c864e890eb295001e7eee1f1c2c2d4893c5c59d803f62aba3c1acb67479b5"
+    },
+    {
+      "path": "examples/eml/03_manual_review/R05_subscription-renewal-request-in-isolation.eml",
+      "bytes": 436,
+      "sha256": "21a33c5e48982a248daea7de09de5fcd0e4185dba18475912694c5e117cee98e"
+    },
+    {
+      "path": "examples/eml/03_manual_review/R06_german-account-settings-prompt-without-verification.eml",
+      "bytes": 455,
+      "sha256": "b58152cb9a4afd82854c33ac88c7a826367cfb05e7ddd031b2717d63204e79c4"
+    },
+    {
+      "path": "examples/eml/README.md",
+      "bytes": 4718,
+      "sha256": "818c682b9c6f889e5f184f02170fa476b04b41b77e5d2a4d34dcbe8a4b096101"
+    },
+    {
+      "path": "examples/eml/VALIDATION_RESULTS.md",
+      "bytes": 5713,
+      "sha256": "0bc6c568563f4abf3d924e1223f3d770785d2c55eedc6d0b7565c1b24ef284fe"
+    },
+    {
+      "path": "examples/eml/cases.json",
+      "bytes": 33376,
+      "sha256": "6f11e3bce0b175f44f316ddc304ac57d3334640a39560f83a74fc623d0b7e6cb"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10475,
+      "sha256": "464e3dfa01480e5fe2610f0f80b5e9901e10d5af02b00691e53d45575cc01c39"
+    },
+    {
+      "path": "js/analyser.js",
+      "bytes": 46777,
+      "sha256": "88bc6bfd8824e6e390e69170a349cc6a25967aeaacaa80424ee37f4fd393252b"
+    },
+    {
+      "path": "js/app.js",
+      "bytes": 32639,
+      "sha256": "8f1e840ad00121cd283970f552c931899b950c62805c1474ad399dbf747c5882"
+    },
+    {
+      "path": "js/attachment-security.js",
+      "bytes": 14611,
+      "sha256": "cdc802f9d8f329856e86c48e14ddcb2958bd7863589a57859407b5e73d3c483c"
+    },
+    {
+      "path": "js/confusables-data.js",
+      "bytes": 336336,
+      "sha256": "8aeef59b24e05fa9c9a279e57bf9177e0b4f99ea3fb5b80da4b08fda9657414b"
+    },
+    {
+      "path": "js/content.js",
+      "bytes": 19747,
+      "sha256": "a5b5a0676fd18cb342aee1d2f4eccd7af0db1574edfdc4a51d6e682243643f33"
+    },
+    {
+      "path": "js/core.js",
+      "bytes": 6386,
+      "sha256": "c8fca451eb1aa6bdadb2b35575a5db2262a5d036c8c2cb9035c88c09188ae382"
+    },
+    {
+      "path": "js/dashboard.js",
+      "bytes": 13564,
+      "sha256": "18f3c5ae95fe7279e4f7c1304f552d7c5f83d3433446ab95ae8a274e3f592199"
+    },
+    {
+      "path": "js/domain-security.js",
+      "bytes": 14912,
+      "sha256": "30d9e4f018ce0f17005e5eaa20aff1dac05305a2ed195cc2fa6a6debfd37bbeb"
+    },
+    {
+      "path": "js/eml.js",
+      "bytes": 14575,
+      "sha256": "769654b43a123ac8ddb2ea3855658036a3a9d95308e1ea34fdb8ff1ca1f3b765"
+    },
+    {
+      "path": "js/guidance.js",
+      "bytes": 13962,
+      "sha256": "a5b95b4e2fed726ff03f47d1f4f66c7f7690dc11c586551c40bd70428e37ae5a"
+    },
+    {
+      "path": "js/html-security.js",
+      "bytes": 7308,
+      "sha256": "6b5ca803f1ab003a3e9e23a760099049f4007ef6036de49bc9d629a167635115"
+    },
+    {
+      "path": "js/investigation-report.js",
+      "bytes": 3317,
+      "sha256": "1a79c98dddc9ba71190c9495db57f0e434ea850fc3bbac3c5ea170612104937c"
+    },
+    {
+      "path": "js/learn.js",
+      "bytes": 9910,
+      "sha256": "218173590528aae18d9ebf80ec17675d51bcc646a1ba19c9b355347669b4a037"
+    },
+    {
+      "path": "js/oauth-security.js",
+      "bytes": 3819,
+      "sha256": "c4dd5d59ccca340fec843eedf8717ef85a3cb4a8836e1075a167d4f1641e1ecd"
+    },
+    {
+      "path": "js/psl-data.js",
+      "bytes": 152626,
+      "sha256": "f805460c340c76ad9b13fc809f370bdf315abaa8567c504bcb88b5d49f7284ff"
+    },
+    {
+      "path": "js/public-suffix.js",
+      "bytes": 2501,
+      "sha256": "c12752ff3acee898b1a6cfa4c0f483c6d109713f9a923184c023c294c7946f6a"
+    },
+    {
+      "path": "js/qr-security.js",
+      "bytes": 4346,
+      "sha256": "83eb0a95a211f175f0bb850e955cbc10f9c0332e9b63ff3d28863b65461d8518"
+    },
+    {
+      "path": "js/rules.js",
+      "bytes": 31590,
+      "sha256": "82f712e6d9dfe62d5489c0542ce0c26387425c454cec44ae28c5d35bdb6846d1"
+    },
+    {
+      "path": "js/threat-feed.js",
+      "bytes": 3769,
+      "sha256": "cfc474b5da40d3d03aa803c26509154480e17b305870c70d8b023ee676d22c33"
+    },
+    {
+      "path": "js/url-security.js",
+      "bytes": 4995,
+      "sha256": "ef6f5934762a412246c82d7210efda5a14a2ffdf6e71defeb7af47ca5f99229f"
+    },
+    {
+      "path": "js/verification-context.js",
+      "bytes": 4274,
+      "sha256": "7eb48e249f499db661f6de3dcf1d633fd2b2b8f55e5ca0f7a5e4c5dff682aa0d"
+    },
+    {
+      "path": "test-phishing-sample.eml",
+      "bytes": 1046,
+      "sha256": "93c224a403a8e6a85243ac4796b0e02e7c61210e9a718ca689b02c71b3b860f9"
+    },
+    {
+      "path": "tests/advanced-security-tests.js",
+      "bytes": 7674,
+      "sha256": "811a29c12145adeed4e7ef09fbc7bf6c27ba1c99463c1895d8ef6c1c94c5b898"
+    },
+    {
+      "path": "tests/adversarial-tests.js",
+      "bytes": 10477,
+      "sha256": "ec4750c4b5ac8fe5a5202af08d9e17563e39a0f9456a6dd7e840db8e4d6e0dbc"
+    },
+    {
+      "path": "tests/deployment-policy-tests.js",
+      "bytes": 3391,
+      "sha256": "7a581d49832117bc5bbf2218178a0d145b2537492c96048a7113a5719a0ec7e9"
+    },
+    {
+      "path": "tests/domain-security-tests.js",
+      "bytes": 10852,
+      "sha256": "9059e3f2235e5a958d2142d9c16a5cf5403d90b788945998d65d4690472a8d31"
+    },
+    {
+      "path": "tests/example-eml-validation-tests.js",
+      "bytes": 554,
+      "sha256": "3f7bcb7bb2f4c721e3bf826e4819d8586c7db942e51c41ac0abf0aea2d65f967"
+    },
+    {
+      "path": "tests/fixtures/QUALITY_CHALLENGE_SYNTHETIC.json",
+      "bytes": 17467,
+      "sha256": "4a3659ef6faea6209904d002168ad8f44a1c12546d0aee7af2efe0e5d76a7654"
+    },
+    {
+      "path": "tests/fixtures/SYNTHETIC_LABELLED_URLS.csv",
+      "bytes": 812,
+      "sha256": "e059c0e3648818ccc790e270634d0b25878fb6ece92f982cceefa699adab919c"
+    },
+    {
+      "path": "tests/fixtures/SYNTHETIC_SPLIT_RESEARCH.csv",
+      "bytes": 1518,
+      "sha256": "d38a7a589c63e13af6a81f4b84fa03cf5ee3e55483ca1fe13b6b8bc1a212e437"
+    },
+    {
+      "path": "tests/fixtures/qr-legitimate-demo.png",
+      "bytes": 551,
+      "sha256": "85c65dfe604f5f5a43cde2a67534837eaa742dd3d88eb1d0d25017625b24e6a0"
+    },
+    {
+      "path": "tests/fixtures/qr-unicode-homograph-demo.png",
+      "bytes": 691,
+      "sha256": "1bb1c8ee9e3ae9a71496cf5bb349b8529983dd997a5e98235e9a0c39d6fbf589"
+    },
+    {
+      "path": "tests/merge-review-tests.js",
+      "bytes": 6231,
+      "sha256": "fc3163244f16d51f9f9552b0c6d5d467d514aa59e328037c82f47b6703bda663"
+    },
+    {
+      "path": "tests/release-hardening-tests.js",
+      "bytes": 5928,
+      "sha256": "e32b28345ab196c33249c70d4dd98f16e057481e8c819dd67557fd0cddb1781c"
+    },
+    {
+      "path": "tests/run-tests.js",
+      "bytes": 13880,
+      "sha256": "23b856494ed0f24a7375d155e4b8543cf4bfd02adaac68be5326cbc63a5e5845"
+    },
+    {
+      "path": "tests/secure-property-tests.js",
+      "bytes": 1694,
+      "sha256": "4f3bab9d0e446e78b88b9100d48fc047962de5532f959554ce289925bd1804c9"
+    },
+    {
+      "path": "tests/url-security-tests.js",
+      "bytes": 3561,
+      "sha256": "75d47cf15e5e0af88d59769f65a402041f6ec4be399cf88b770743c6475e456d"
+    },
+    {
+      "path": "tests/v10-public-evaluation-tests.js",
+      "bytes": 4199,
+      "sha256": "91a0aad790d8c5a7dc48bef9515b19a1a61d27a3467a16f6f436ca7ba2664bd4"
+    },
+    {
+      "path": "tests/v11-verification-quality-tests.js",
+      "bytes": 5787,
+      "sha256": "5dcb4b7973f53dcb3496cef868adec736a2dcdec125f82dfd7da3534bf40bb07"
+    },
+    {
+      "path": "tests/v12-evidence-study-tests.js",
+      "bytes": 6935,
+      "sha256": "23a04e387a3c317279d2516b27c41cb3d520e7eb884b4d03e5527983e64e6654"
+    },
+    {
+      "path": "tests/v6-security-tests.js",
+      "bytes": 5628,
+      "sha256": "8e94225db36f9c9ef9cd1bde6a960d77cb7db09c5f68cb664a7c525e7ef0a632"
+    },
+    {
+      "path": "tests/v7-evaluation-tests.js",
+      "bytes": 7777,
+      "sha256": "ad0f533abb53c276114aa620bfa7fec251cf449d0b35e509120ef1bf1e342a75"
+    },
+    {
+      "path": "tests/v8-attachment-security-tests.js",
+      "bytes": 9168,
+      "sha256": "45cc0bc6d8dcfc0cfa668feb08256cb5028f45aafb427f64081a0ce70d1af7ad"
+    },
+    {
+      "path": "tests/v9-quality-tests.js",
+      "bytes": 3536,
+      "sha256": "24a05fb47a36a16ac7e98abebaf8d7adc17c261244749c69dd1c1f4e060c6e0f"
+    },
+    {
+      "path": "tools/benchmark-audit.js",
+      "bytes": 6332,
+      "sha256": "9a2c1720c2d3c887cc1eeb1f73a18712c82fa79a7695f2e2ef066ca9745a965f"
+    },
+    {
+      "path": "tools/benchmark-v7.js",
+      "bytes": 10384,
+      "sha256": "0352b242823414c135934288e91393c527c12ae376489a92666d93fa600a16d3"
+    },
+    {
+      "path": "tools/benchmark.js",
+      "bytes": 6213,
+      "sha256": "e8dd80cdeb612a347259cce38da19de5865cfe4c988e431b4750259e65283a37"
+    },
+    {
+      "path": "tools/browser_smoke.py",
+      "bytes": 4020,
+      "sha256": "1220cd5ab05c5267a72143c0149d1eb143f7df20e6d6f0ae7232ed55c05ca324"
+    },
+    {
+      "path": "tools/build-preview.py",
+      "bytes": 850,
+      "sha256": "24a4691b2cf9f1e8bff601e06b8e2cf695e4e2654856dbc9b9b266ccbf2b31c1"
+    },
+    {
+      "path": "tools/build-release-manifest.py",
+      "bytes": 1704,
+      "sha256": "f993d51b38a117c2ac98f23b0b247c8cca36356f36592e360bb760ab75308d1d"
+    },
+    {
+      "path": "tools/evaluate-example-emls.js",
+      "bytes": 8177,
+      "sha256": "8b32e93bcf7835e1de1ddca853eb12a0226dea36ebcdb4cac4d4dc53aac23e23"
+    },
+    {
+      "path": "tools/fetch-zenodo-validation.py",
+      "bytes": 2281,
+      "sha256": "8769be2ad09f61cefb6f6868b38277f48cfc72607eb267ef190659ae6d68f027"
+    },
+    {
+      "path": "tools/generate-example-emls.py",
+      "bytes": 22906,
+      "sha256": "9758d41f2369d47acf10d5106371018d0b794a57b09a8c0e886ef4e65a1be1e3"
+    },
+    {
+      "path": "tools/public-corpus-evaluation.js",
+      "bytes": 13421,
+      "sha256": "e11d0d2c83a52006a749ae0e0f3e2da8f3211d5cdd795424c1f5f019ffcf5f9d"
+    },
+    {
+      "path": "tools/quality-audit.js",
+      "bytes": 4837,
+      "sha256": "a2a98aa8e65b874dc062658abfbb85afe815a847d7788c28cbbe648994397fc3"
+    },
+    {
+      "path": "tools/render-public-evaluation.js",
+      "bytes": 4482,
+      "sha256": "ff4bd0dad8a38578973ac4cc766bff05c319d32f7b52181ed22b6a237ce83fc3"
+    },
+    {
+      "path": "tools/update-standards.py",
+      "bytes": 2937,
+      "sha256": "d8e3a1b7615a7b30d693420b9820c1e3a76a6ab9e0fedf3f9f528bebd5c37b7c"
+    },
+    {
+      "path": "tools/v11-browser-smoke.py",
+      "bytes": 3205,
+      "sha256": "bbe095f940e35bb0c02d72b9bc18dd37b746bcc1107e394493583c2a2432e82a"
+    },
+    {
+      "path": "tools/v12-evidence-study.js",
+      "bytes": 17776,
+      "sha256": "4408d9db397f2c6b6a559cb706ec5a5dfd1f89413804460cb44411610679e877"
+    },
+    {
+      "path": "tools/v12-render-study.js",
+      "bytes": 3671,
+      "sha256": "77cb867d99becad5035e86a8dc66d245df1cf91f9b09f006dc759483682e3a8c"
+    },
+    {
+      "path": "tools/v6_browser_smoke.py",
+      "bytes": 3511,
+      "sha256": "76b56ee591667bfa6fd2bb7f3d7e552e34cdf8a05ad6f34a9e51ccb488dc0429"
+    },
+    {
+      "path": "tools/v7_browser_smoke.py",
+      "bytes": 2771,
+      "sha256": "177c76b0e93dc913ed50ee105b3fc26a9e15d59b3c13f1b578c3373973bf07b0"
+    },
+    {
+      "path": "tools/v8-browser-smoke.py",
+      "bytes": 4786,
+      "sha256": "6040bdd05bbd81916883f813595a683fe2841f6c196c3a5bbafee016863e156c"
+    },
+    {
+      "path": "tools/v9-browser-quality-smoke.py",
+      "bytes": 2715,
+      "sha256": "e0e069af62809655abde53701fc59b25ea31cb29fc86c66f7c5c8b98833d221e"
+    },
+    {
+      "path": "tools/vendor-qr-decoder.py",
+      "bytes": 3389,
+      "sha256": "8727beff499693dfb2e1a741045bdfd71f98724d0703acb8b36ade8971d1ca77"
+    },
+    {
+      "path": "tools/verify-qr-vendor.py",
+      "bytes": 1453,
+      "sha256": "c00d41665a492900f523524f1da15baaa67ec5f1aea6155d17d4811dae546fff"
+    },
+    {
+      "path": "tools/verify-release-manifest.py",
+      "bytes": 784,
+      "sha256": "db5c030a797869201d98fa2c91f9e13c76f29cb866708399aabab0474a6c0f34"
+    }
+  ],
+  "benchmark": "docs/v6-synthetic-audit.json",
+  "new_security_modules": [
+    "js/oauth-security.js",
+    "js/threat-feed.js",
+    "js/investigation-report.js"
+  ]
+}
